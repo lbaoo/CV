@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẫu CV - Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Thanh công cụ hỗ trợ in / xuất PDF -->
+    <div class="toolbar no-print">
+        <button onclick="window.print()" class="btn-print">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M6 9V2h12v7"></path>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <path d="M6 14h12v8H6z"></path>
+            </svg>
+            In / Xuất PDF
+        </button>
+    </div>
+
+    <div class="cv-page">
+        <div class="cv-container">
+
+            <!-- CỘT TRÁI (LEFT COLUMN) -->
+            <aside class="left-col">
+                <!-- Ảnh đại diện -->
+                <div class="avatar-wrapper">
+                    <div class="avatar-ring">
+                        <img src="avt.png" alt="Ảnh đại diện" class="avatar-img">
+                    </div>
+                </div>
+
+                <!-- Họ tên & Chức danh -->
+                <div class="intro-block">
+                    <h1 class="person-name">Lưu Gia Bảo</h1>
+                    <div class="job-title">Sinh viên năm 3</div>
+                </div>
+
+                <!-- Thông tin liên hệ -->
+                <ul class="contact-list">
+                    <li>
+                        <span class="icon-circle">
+                            <!-- Calendar Icon -->
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                        </span>
+                        <span class="contact-text">01/01/2005</span>
+                    </li>
+                    <li>
+                        <span class="icon-circle">
+                            <!-- Location Icon -->
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </span>
+                        <span class="contact-text">15/5 Đường số 59, Phường An Hội Tây, TPHCM</span>
+                    </li>
+                    <li>
+                        <span class="icon-circle">
+                            <!-- Phone Icon -->
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="contact-text">0562837584</span>
+                    </li>
+                    <li>
+                        <span class="icon-circle">
+                            <!-- Globe Icon -->
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </span>
+                        <span class="contact-text">
+                            <a href="https://github.com/lbaoo" target="_blank" rel="noopener">https://github.com/lbaoo</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="icon-circle">
+                            <!-- Mail Icon -->
+                            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor"
+                                stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </span>
+                        <span class="contact-text">
+                            <a href="mailto:lbao312123@gmail.com">lbao312123@gmail.com</a>
+                        </span>
+                    </li>
+                </ul>
+
+                <!-- About me -->
+                <div class="left-section">
+                    <h2 class="title-with-line">About me</h2>
+                    <p class="about-text">
+                        Tôi là sinh viên năm 3 ngành Công nghệ Thông tin với định hướng phát triển trở thành một Web Developer chuyên nghiệp. Có nền tảng vững về lập trình web, tư duy logic tốt và tinh thần tự học cao, tôi luôn chủ động nắm bắt công nghệ mới và xây dựng các dự án cá nhân. Tôi mong muốn tìm kiếm cơ hội thực tập để trau dồi kinh nghiệm thực chiến, cọ xát với môi trường làm việc thực tế và đóng góp tích cực vào các dự án của doanh nghiệp.
+                    </p>
+                </div>
+
+                <!-- Skills -->
+                <div class="left-section">
+                    <h2 class="title-with-line">Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none">
+                                    <path d="M11.91 2C6.91 2 7.21 4.17 7.21 4.17L7.22 6.42H12.02V7.12H5.19C3.12 7.12 2 8.42 2 10.49C2 12.56 2.92 13.78 5.19 13.78H6.55V11.96C6.55 9.77 8.35 8.04 10.57 8.04H15.34C16.89 8.04 18.15 6.77 18.15 5.21C18.15 3.38 16.96 2 11.91 2ZM9.61 3.52C10.22 3.52 10.72 4.02 10.72 4.63C10.72 5.24 10.22 5.74 9.61 5.74C9 5.74 8.5 5.24 8.5 4.63C8.5 4.02 9 3.52 9.61 3.52Z" fill="#387EB8"/>
+                                    <path d="M12.09 22C17.09 22 16.79 19.83 16.79 19.83L16.78 17.58H11.98V16.88H18.81C20.88 16.88 22 15.58 22 13.51C22 11.44 21.08 10.22 18.81 10.22H17.45V12.04C17.45 14.23 15.65 15.96 13.43 15.96H8.66C7.11 15.96 5.85 17.23 5.85 18.79C5.85 20.62 7.04 22 12.09 22ZM14.39 20.48C13.78 20.48 13.28 19.98 13.28 19.37C13.28 18.76 13.78 18.26 14.39 18.26C15 18.26 15.5 18.76 15.5 19.37C15.5 19.98 15 20.48 14.39 20.48Z" fill="#FFE052"/>
+                                </svg>
+                                <span>Python</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <svg class="skill-icon" viewBox="0 0 24 24">
+                                    <rect width="24" height="24" rx="4" fill="#F7DF1E"/>
+                                    <path d="M6 16.6c0 2.2 1.3 3.4 3.3 3.4 1.8 0 2.9-.9 3.3-1.8l-1.6-.9c-.3.6-.8 1.1-1.7 1.1-1 0-1.5-.6-1.5-1.9V11.2H6v5.4zm8.5 0c0 2.3 1.5 3.4 3.6 3.4 1.7 0 2.8-.7 3.4-1.7l-1.5-1c-.4.6-.9 1-1.9 1-1 0-1.6-.5-1.6-1.4 0-.9.6-1.3 1.8-1.7 1.8-.6 3.1-1.4 3.1-3.2 0-1.9-1.5-3.2-3.4-3.2-1.9 0-3.1 1.1-3.5 2.1l1.5.9c.3-.6.8-1.2 2-1.2.9 0 1.5.5 1.5 1.2 0 .8-.6 1.1-1.8 1.5-1.9.7-3.2 1.4-3.2 3.2z" fill="#000000"/>
+                                </svg>
+                                <span>Javascript</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <svg class="skill-icon" viewBox="0 0 24 24" fill="none">
+                                    <rect x="4" y="4" width="16" height="16" rx="3.5" fill="#4F46E5"/>
+                                    <text x="12" y="15.2" font-size="8.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" fill="#ffffff" text-anchor="middle">AI</text>
+                                    <path d="M8 1V4M12 1V4M16 1V4M8 20V23M12 20V23M16 20V23M1 8H4M1 12H4M1 16H4M20 8H23M20 12H23M20 16H23" stroke="#6366F1" stroke-width="1.6" stroke-linecap="round"/>
+                                </svg>
+                                <span>AI</span>
+                            </div>
+                            <div class="skill-bar-bg">
+                                <div class="skill-bar-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- CỘT PHẢI (RIGHT COLUMN) -->
+            <main class="right-col">
+
+                <!-- Interests -->
+                <section class="section-block">
+                    <div class="badge-title">Interests</div>
+                    <div class="interests-content">Game, AI, công nghệ mới</div>
+                </section>
+
+                <!-- Education -->
+                <section class="section-block">
+                    <div class="badge-title">Education</div>
+                    <div class="timeline-table">
+
+                        <div class="timeline-row">
+                            <div class="time-col">2023 - 2027</div>
+                            <div class="desc-col">
+                                <div class="item-primary">Chuyên ngành Công nghệ Thông tin</div>
+                                <div class="item-secondary">Trường Đại học Giao thông Vận tải TP.HCM (UTH)</div>
+                            </div>
+                            <div class="location-col">TP.HCM</div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Personal Information -->
+                <section class="section-block">
+                    <div class="badge-title">Personal Information</div>
+                    <div class="info-table">
+                        <div class="info-row">
+                            <div class="info-label">Father's Name</div>
+                            <div class="info-colon">:</div>
+                            <div class="info-value">Lưu Công Thành</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Mother's Name</div>
+                            <div class="info-colon">:</div>
+                            <div class="info-value">Trần Nữ Thục Quyên</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Religion</div>
+                            <div class="info-colon">:</div>
+                            <div class="info-value">Thiên Chúa</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Age</div>
+                            <div class="info-colon">:</div>
+                            <div class="info-value">21</div>
+                        </div>
+                        <div class="info-row">
+                            <div class="info-label">Married Status</div>
+                            <div class="info-colon">:</div>
+                            <div class="info-value">Độc thân</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 
+                ============================================================
+                CÁC MỤC TẠM THỜI ẨN (BỎ COMMENT KHI CẦN BỔ SUNG TRONG TƯƠNG LAI)
+                ============================================================
+                -->
+
+                <!--
+                <section class="section-block">
+                    <div class="badge-title">Professional Training</div>
+                    <div class="timeline-table simple-training">
+                        <div class="timeline-row">
+                            <div class="time-col">[Năm]</div>
+                            <div class="desc-col">
+                                <div class="item-primary">[Tên khóa học / Chứng chỉ chuyên môn]</div>
+                            </div>
+                        </div>
+                        <div class="timeline-row">
+                            <div class="time-col">[Năm]</div>
+                            <div class="desc-col">
+                                <div class="item-primary">[Tên khóa học / Chứng chỉ chuyên môn]</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-block">
+                    <div class="badge-title">Experience</div>
+                    <div class="timeline-table">
+                        <div class="timeline-row">
+                            <div class="time-col">[Năm - Năm]</div>
+                            <div class="desc-col">
+                                <div class="item-primary">[Tên công ty / Cơ quan]</div>
+                                <div class="item-text">[Mô tả công việc, trách nhiệm và thành tích đạt được]</div>
+                            </div>
+                            <div class="location-col">[Địa điểm]</div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="time-col">[Năm - Năm]</div>
+                            <div class="desc-col">
+                                <div class="item-primary">[Tên công ty / Cơ quan]</div>
+                                <div class="item-text">[Mô tả công việc, trách nhiệm và thành tích đạt được]</div>
+                            </div>
+                            <div class="location-col">[Địa điểm]</div>
+                        </div>
+
+                        <div class="timeline-row">
+                            <div class="time-col">[Năm - Năm]</div>
+                            <div class="desc-col">
+                                <div class="item-primary">[Tên công ty / Cơ quan]</div>
+                                <div class="item-text">[Mô tả công việc, trách nhiệm và thành tích đạt được]</div>
+                            </div>
+                            <div class="location-col">[Địa điểm]</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-block">
+                    <div class="badge-title">REFERENCES</div>
+                    <div class="reference-content">
+                        <div class="ref-name">[Họ và tên người tham chiếu]</div>
+                        <div class="ref-role">[Chức vụ / Vị trí]</div>
+                        <div class="ref-dept">[Phòng ban / Đơn vị công tác]</div>
+                        <div class="ref-inst">[Tên trường / Cơ quan / Doanh nghiệp]</div>
+                    </div>
+                </section>
+                -->
+
+            </main>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
